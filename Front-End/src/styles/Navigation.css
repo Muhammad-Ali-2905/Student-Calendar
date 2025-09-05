@@ -1,0 +1,71 @@
+/* Navigation.css */
+
+.dashboard-sidebar {
+    width: 220px;
+    min-height: 100vh;
+    background-color: #ffffff;
+    border-right: 1px solid #e0e0e0;
+    padding: 2rem 1rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+
+  
+  
+  .sidebar-header {
+    margin-bottom: 2rem;
+  }
+  
+  .sidebar-header h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.2rem;
+    color: #2c3e50;
+  }
+  
+  .sidebar-header p {
+    font-size: 0.95rem;
+    color: #7f8c8d;
+    font-weight: 500;
+  }
+  
+  .sidebar-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .sidebar-menu li {
+    margin-bottom: 1rem;
+  }
+  
+  .sidebar-menu a {
+    text-decoration: none;
+    color: #3498db;
+    padding: 0.5rem 1rem;
+    display: block;
+    border-radius: 6px;
+    transition: background-color 0.2s ease;
+  }
+  
+  .sidebar-menu a:hover {
+    background-color: #ecf0f1;
+  }
+  
+  .logout-button {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background-color 0.2s ease;
+    width: 100%;
+    text-align: left;
+  }
+  
+  .logout-button:hover {
+    background-color: #c0392b;
+  }
+  

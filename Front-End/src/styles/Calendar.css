@@ -1,0 +1,111 @@
+.calendar-container {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 30px;
+  }
+  
+  .calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .calendar-header h3 {
+    margin: 0;
+    color: #333;
+  }
+  
+  .calendar-grid {
+    margin-bottom: 20px;
+  }
+  
+  .calendar-weekdays {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    text-align: center;
+    font-weight: bold;
+    color: #555;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+  }
+  
+  .calendar-days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-gap: 5px;
+    margin-top: 10px;
+  }
+  
+  .calendar-day {
+    aspect-ratio: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .calendar-day:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .empty-day {
+    border: none;
+  }
+  
+  .current-day {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  .has-event {
+    position: relative;
+  }
+  
+  .has-event::after {
+    content: '';
+    position: absolute;
+    bottom: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: #e74c3c;
+  }
+  
+  .today-events {
+    margin-top: 20px;
+  }
+  
+  .today-events h3 {
+    margin-top: 0;
+    color: #333;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+  }
+  
+  .event-item {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #f8f9fa;
+    border-radius: 4px;
+    margin-bottom: 10px;
+  }
+  
+  .event-time {
+    background-color: #eee;
+    padding: 5px 8px;
+    border-radius: 4px;
+    margin-right: 10px;
+    font-size: 14px;
+  }
+  
+  .event-title {
+    font-weight: 500;
+  }
